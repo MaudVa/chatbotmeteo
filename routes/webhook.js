@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   if (req.query['hub.mode'] === 'subscribe' &&
-      req.query['hub.verify_token'] === '4P|snTKth,=u(O:)' {
+      req.query['hub.verify_token'] === '4P|snTKth,=u(O:)'){
     console.log("Validating webhook");
     res.status(200).send(req.query['hub.challenge']);
   } else {
