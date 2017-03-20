@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const request = require('request');
 
 const PAGE_ACCESS_TOKEN = process.env.MESSENGER_PAGE_ACCESS_TOKEN;
 
